@@ -24,7 +24,7 @@ export default function WeatherApi() {
             }
 
             // Fetch weather details using city name
-            const weatherResponse = await axios.get(`http://api.weatherapi.com/v1/current.json?key=8f99b1edf8324f9f89b175827243107&q=${city}`);
+            const weatherResponse = await axios.get(`https://api.weatherapi.com/v1/current.json?key=8f99b1edf8324f9f89b175827243107&q=${city}`);
             setWeather(weatherResponse.data);
             setError(null);
         } catch (err) {
